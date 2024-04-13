@@ -11,8 +11,7 @@ body{
 }
 h1{
     font-size: 2.027rem;
-    font-weight: 400;
-    padding-left: 20px;
+    font-weight: 500;
 
 }
 h2{
@@ -37,6 +36,8 @@ nav ul{
 nav ul a{
     text-decoration: none;
     color: #000;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 #product .wrapper{
     border-radius: 10px;
@@ -71,6 +72,13 @@ nav ul a{
     padding-left:20px;
     padding-right:20px;
 }
+#intro .wrapper p{
+    margin-top: 0;
+}
+#intro .wrapper h3{
+    margin-bottom: 0;
+}
+
 #button{
     text-decoration: none;
     color: #fff;
@@ -138,8 +146,8 @@ footer{
     color: #fff;
     text-align: center;
     max-width: 1200px;
-    margin: 40px auto;
-    padding: 5px;
+    margin: 40px auto 0 auto;
+    padding: 3px;
 }
 @media (min-width: 768px) {
         #grid-products{
@@ -177,6 +185,24 @@ footer{
         max-width: 1200px;
  
         gap: 20px;
+    }
+}
+
+@media(min-width: 960px) {
+    #box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    h1{
+        margin: 0 auto;
+    }
+    #comments {
+        max-width: none;
+    }
+    footer{
+        max-width: none;
+    }
 
 }
+
 
